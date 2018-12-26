@@ -6,3 +6,5 @@ spring:
       password: root
       validation-query: select 1
       filters: stat,wall,slf4j,config
+      stat-view-servlet:
+        enabled: false # 这个属性一定要设置，否则自定义的druid的servlet不会生效
